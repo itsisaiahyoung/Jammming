@@ -1,0 +1,31 @@
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+
+
+/*style my app component*/
+.App {
+  
+  /*add background image from folder*/
+  background-image: url(./djback2.jpg);
+  text-align: center;
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 0 17% 10% 17%;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+
+
