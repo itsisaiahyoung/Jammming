@@ -10,7 +10,19 @@ const App = () => {
 
   return (
     <div className="App">
-        <SearchBar />
+      <header className="App-header">
+        <h1 className="Title">My Spotify</h1>
+      </header>
+      <SearchBar />
+
+      <div className="App-playlist">
+        <div className="App-playlist-item">
+          <SearchResults />
+        </div>
+        <div className="App-playlist-item">
+          <Playlist />
+        </div>
+      </div>
     </div>
   );
 }

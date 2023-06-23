@@ -5,10 +5,9 @@
     align-items: center;
     width: 100%;
     height: 50px;
-    background-color: #ad00c8;
+    background-color: #9300c8;
     padding: 0 20px;
     box-sizing: border-box;
-    border-radius: 10px;
 
 }
 
@@ -22,4 +21,18 @@
     box-sizing: border-box;
     font-size: 16px;
     outline: none;
+}
+
+/*style the search button*/
+.search-bar button {
+    width: 75px;
+    height: 60%;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: none;
+    background-color: #6f00ff;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
 }
