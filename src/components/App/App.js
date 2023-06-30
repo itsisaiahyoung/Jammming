@@ -8,6 +8,20 @@ import Playlist from "../Playlist/Playlist";
 
 const App = () => {
 
+  const [searchResults, setSearchResults] = useState([]);
+  const [playlistName, setPlaylistName] = useState("New Playlist");
+  const [playlistTracks, setPlaylistTracks] = useState([]);
+
+  const addTrack = useCallback((track) => {
+  } , []);
+
+  const removeTrack = useCallback((track) => {
+  }, []);
+
+
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,10 +31,12 @@ const App = () => {
 
       <div className="App-playlist">
         <div className="App-playlist-item">
-          <SearchResults />
+          <SearchResults SearchResults={SearchResults} onAdd={addTrack} />
         </div>
         <div className="App-playlist-item">
-          <Playlist />
+          <Playlist 
+            playlistName={playlistName}
+          />
         </div>
       </div>
     </div>
