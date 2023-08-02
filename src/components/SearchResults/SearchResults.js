@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 import "./SearchResults.css";
 
 import Tracklist from "../TrackList/Tracklist";
@@ -7,7 +7,7 @@ const SearchResults = (props) => {
     return (
         <div className="search-results">
             <h2>Results</h2>
-            <Tracklist track={props.SearchResults}  onAdd={props.onAdd}/>
+            <Tracklist tracks={props.searchResults}  onAdd={props.onAdd} />
         </div>
     );
 }
